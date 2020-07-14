@@ -21,6 +21,8 @@ body {
     --color-navbar-border-bottom: #e2e2e2;
     --color-add-wrapper: rgb(243, 243, 243);
     --color-add-span: #c2c2c2;
+    --color-text-img: #666;
+    --color-text: #21201d;
 }
 
 .flex {
@@ -74,19 +76,244 @@ body {
     border-radius: 0.3rem;
 }
 
-.header-add {
+.margin-top {
+    margin-top: 6rem;
+}
+
+.add-wrapper {
     justify-content: center;
     text-align: center;
     height: 30rem;
     width: 100%;
     background-color: var(--color-add-wrapper);
-    margin-top: 6rem;
     padding-top: 1.5rem;
 }
 
-.header-add span {
+.add-span {
     align-self: flex-start;
     text-transform: uppercase;
     color: var(--color-add-span);
     font-size: 1.4rem;
+}
+
+/*----------------------- Space Section --------------------------*/
+.space-section {
+    width: 90%;
+    display: block;
+    margin: 4rem auto;
+}
+
+.space-section h2 {
+    font-size: 3.4rem;
+    display: block;
+    width: 55rem;
+    margin: 2rem auto;
+}
+
+.space-section p {
+    color: var(--color-text-img);
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+
+.space-img-box {
+    width: 120rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.space-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*----------------------- Article Section -------------------------*/
+/*------- Main Article ---------*/
+.float-blog, .flexbox-blog {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.float-blog:after, .icons-box:after, .aside-post:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.article-box {
+    display: block;
+    float: left;
+    width: 80%;
+}
+
+.article-top {
+    width: 100%;
+    display: block;
+    margin: 1.5rem 0;
+    margin-bottom: 3rem;
+}
+
+.article-top p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.article-top a {
+    text-decoration: underline;
+    color: black;
+}
+
+.article-top a:hover {
+    text-decoration: none;
+}
+
+.icons-box {
+    display: block;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.article-icons-left {
+    display: block;
+    width: 30rem;
+    float: left;
+}
+
+.article-icons-right {
+    display: block;
+    width: 30rem;
+    float: right;
+    margin-top: -2rem;
+}
+
+.circle-icons, .normal-icons {
+    display: inline-block;
+}
+
+.circle i, .normal-icons i {
+    display: inline-block;
+}
+
+.circle i {
+    margin-left: 2rem;
+    margin-right: 1.8rem;
+}
+
+.fa-comment-alt {
+    margin-left: 1rem;
+}
+
+.circle i {
+    font-size: 1.8rem;
+    color: var(--color-text);
+}
+
+.circle {
+    position: relative;
+    display: inline-block;
+}
+
+.circle:before  {
+    content: "";
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: lightgray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.normal-icons i {
+    font-size: 2.5rem;
+    color: grey;
+}
+
+.article-icons-left span {
+    font-size: 1.2rem;
+}
+
+.main-article p, .flexbox-blog p {
+    font-size: 1.6rem;
+    color: var(--color-text);
+}
+
+/*-------- Aside ---------*/
+.aside-box {
+    display: block;
+    float: right;
+    width: 30rem;
+    font-size: 1.6rem;
+}
+
+.aside-box h3 {
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.aside-box h3:before {
+    content: "";
+    height: 0.1rem;
+    background-color: lightgray;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+}
+
+.aside-post img {
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.aside-post a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+/*----------------------- Flexbox Article ------------------------*/
+.flexbox-blog {
+    margin-top: 4rem;
+}
+
+.flex-article {
+    width: 80%;
+}
+
+.article-span h3 {
+    margin-top: 6rem;
+    margin-bottom: 6rem !important;
+    text-align: center;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+.article-span h3:before, .article-span h3:after {
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: lightgray;
+}
+
+.article-span h3:before {
+    top: -3rem;
+}
+
+.article-span h3:after {
+    bottom: -3rem;
+}
+
+.flexbox-blog h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
 }
