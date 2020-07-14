@@ -1,0 +1,92 @@
+/*------------------ Common Styles -------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --color-navbar-button: rgb(86, 123, 149);
+    --color-navbar-button-hover: rgb(50, 104, 145);
+    --color-navbar-border-bottom: #e2e2e2;
+    --color-add-wrapper: rgb(243, 243, 243);
+    --color-add-span: #c2c2c2;
+}
+
+.flex {
+    display: flex;
+}
+
+/*------------------ Navbar Styles --------------------*/
+.header {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: var(--color-navbar-border-bottom);
+    box-shadow: 0 0 2rem rgba(0,0,0, 0.3);
+    padding: 0.5rem 4rem;
+    background-color: white;
+    z-index: 10000;
+}
+
+.left-nav i {
+    font-size: 2rem;
+    margin-right: 3rem;
+}
+
+.middle-nav {
+    width: 25rem;
+    height: 5rem;
+}
+
+.middle-nav img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav-btn {
+    margin-left: 1.5rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--color-navbar-button);
+    color: white;
+    font-weight: 600;
+    font-size: 1.4;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+}
+
+.header-add {
+    justify-content: center;
+    text-align: center;
+    height: 30rem;
+    width: 100%;
+    background-color: var(--color-add-wrapper);
+    margin-top: 6rem;
+    padding-top: 1.5rem;
+}
+
+.header-add span {
+    align-self: flex-start;
+    text-transform: uppercase;
+    color: var(--color-add-span);
+    font-size: 1.4rem;
+}
