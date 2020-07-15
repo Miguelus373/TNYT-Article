@@ -459,7 +459,8 @@ body {
 .small-text p {
     font-size: 1.2rem;
     color: var(--color-text-img);
-    margin: 2rem 0;
+    margin: 2rem auto;
+    width: 56%;
 }
 
 .small-text a:not(:last-child) {
@@ -485,6 +486,8 @@ body {
 
 .article-continue-bottom-box {
     justify-content: space-between;
+    width: 56%;
+    margin: 0 auto;
 }
 
 .continue-left button {
@@ -498,5 +501,22 @@ body {
 }
 
 .article-title {
-  margin-left: 24rem !important;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.article-title-2 {
+    width: 56%;
+    margin: 2rem auto !important;
+}
+
+.article-link {
+    text-decoration: underline;
+    color: var(--color-navbar-button);
+    transition: all 0.4s; 
+    font-weight: 600;
+}
+
+.article-link:hover {
+    text-decoration: none;
 }
