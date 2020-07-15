@@ -132,7 +132,7 @@ body {
 /*----------------------- Article Section -------------------------*/
 /*------- Main Article ---------*/
 .float-blog, .flexbox-blog {
-    width: 90%;
+    width: 56%;
     margin: 0 auto;
     margin-bottom: 6rem;
 }
@@ -240,9 +240,25 @@ body {
     font-size: 1.2rem;
 }
 
-.main-article p, .flexbox-blog p, .article-continue p {
+.flexbox-blog p, .article-continue p {
     font-size: 1.6rem;
     color: var(--color-text);
+    margin: 0 auto;
+    width: 56%;
+}
+
+.main-article p, .flex-article p {
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--color-text);
+}
+
+.flex-article p {
+  width: 80%;
+}
+
+.flex-article {
+  margin-left: -6rem;
 }
 
 /*-------- Aside ---------*/
@@ -251,6 +267,9 @@ body {
     float: right;
     width: 30rem;
     font-size: 1.6rem;
+    position: absolute;
+    top: 20rem;
+    right: -18rem;
 }
 
 .aside-box h3 {
@@ -283,10 +302,11 @@ body {
 /*----------------------- Flexbox Article ------------------------*/
 .flexbox-blog {
     margin-top: 4rem;
+    position: relative;
 }
 
 .flex-article {
-    width: 80%;
+    width: 100%;
 }
 
 .article-span h3 {
@@ -395,9 +415,9 @@ body {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    width: 100%;
-    height: 80rem;
-    margin: 3rem 0;
+    width: 56%;
+    height: 40rem;
+    margin: 3rem auto;
 }
 
 .video iframe {
@@ -407,9 +427,10 @@ body {
 }
 
 .video-p {
-    color: var(--color-add-span);
+    color: var(--color-add-span) !important;
     margin: 1rem 0;
     font-size: 1.2rem;
+    width: 100% !important;
 }
 
 .article-continue h3 {
@@ -474,4 +495,8 @@ body {
 .margin-circle-top {
     margin-top: 1.5rem;
     margin-right: 1rem;
+}
+
+.article-title {
+  margin-left: 24rem !important;
 }
