@@ -394,7 +394,8 @@ body {
 .bottom-p {
     flex-direction: column;
     align-self: flex-start;
-    margin-left: 32rem;
+    width: 50.5%;
+    margin: 0 auto;
 }
 
 .bottom-p p {
@@ -416,7 +417,7 @@ body {
     align-content: center;
     justify-content: center;
     width: 56%;
-    height: 40rem;
+    height: 50rem;
     margin: 3rem auto;
 }
 
@@ -426,10 +427,10 @@ body {
     object-fit: contain;
 }
 
-.video-p {
-    color: var(--color-add-span) !important;
+.video p {
+    color: var(--color-add-span);
     margin: 1rem 0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 100% !important;
 }
 
@@ -454,6 +455,7 @@ body {
     font-size: 1.4rem;
     color: var(--color-text-img);
     margin: 1rem 0;
+    width: 100%;
 }
 
 .small-text p {
