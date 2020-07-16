@@ -1,253 +1,264 @@
-/*------------------ Common Styles -------------------*/
+/* ------------------ Common Styles ------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
 
-*, *:before, *:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 :root {
-    --color-navbar-button: rgb(86, 123, 149);
-    --color-navbar-button-hover: rgb(50, 104, 145);
-    --color-navbar-border-bottom: #e2e2e2;
-    --color-add-wrapper: rgb(243, 243, 243);
-    --color-add-span: #c2c2c2;
-    --color-text-img: #666;
-    --color-text: #21201d;
+  --color-navbar-button: rgb(86, 123, 149);
+  --color-navbar-button-hover: rgb(50, 104, 145);
+  --color-navbar-border-bottom: #e2e2e2;
+  --color-add-wrapper: rgb(243, 243, 243);
+  --color-add-span: #c2c2c2;
+  --color-text-img: #666;
+  --color-text: #21201d;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
-/*------------------ Navbar Styles --------------------*/
+/* ------------------ Navbar Styles -------------------- */
 .header {
-    flex-direction: column;
-    justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .navbar {
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    border-bottom: var(--color-navbar-border-bottom);
-    box-shadow: 0 0 2rem rgba(0,0,0, 0.3);
-    padding: 0.5rem 4rem;
-    background-color: white;
-    z-index: 10000;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: var(--color-navbar-border-bottom);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 4rem;
+  background-color: white;
+  z-index: 10000;
 }
 
 .left-nav i {
-    font-size: 2rem;
-    margin-right: 3rem;
+  font-size: 2rem;
+  margin-right: 3rem;
 }
 
 .middle-nav {
-    width: 25rem;
-    height: 5rem;
+  width: 25rem;
+  height: 5rem;
 }
 
 .middle-nav img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.nav-btn, .continue-left button {
-    margin-left: 1.5rem;
-    padding: 1rem 1.5rem;
-    background-color: var(--color-navbar-button);
-    color: white;
-    font-weight: 600;
-    font-size: 1.4;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 0.3rem;
+.nav-btn,
+.continue-left button {
+  margin-left: 1.5rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-navbar-button);
+  color: white;
+  font-weight: 600;
+  font-size: 1.4;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.3rem;
 }
 
 .margin-top {
-    margin-top: 6rem;
+  margin-top: 6rem;
 }
 
 .add-wrapper {
-    justify-content: center;
-    text-align: center;
-    height: 30rem;
-    width: 100%;
-    background-color: var(--color-add-wrapper);
-    padding-top: 1.5rem;
+  justify-content: center;
+  text-align: center;
+  height: 30rem;
+  width: 100%;
+  background-color: var(--color-add-wrapper);
+  padding-top: 1.5rem;
 }
 
 .add-span {
-    align-self: flex-start;
-    text-transform: uppercase;
-    color: var(--color-add-span);
-    font-size: 1.4rem;
+  align-self: flex-start;
+  text-transform: uppercase;
+  color: var(--color-add-span);
+  font-size: 1.4rem;
 }
 
-/*----------------------- Space Section --------------------------*/
+/* ----------------------- Space Section -------------------------- */
 .space-section {
-    width: 90%;
-    display: block;
-    margin: 4rem auto;
+  width: 90%;
+  display: block;
+  margin: 4rem auto;
 }
 
 .space-section h2 {
-    font-size: 3.4rem;
-    display: block;
-    width: 55rem;
-    margin: 2rem auto;
+  font-size: 3.4rem;
+  display: block;
+  width: 55rem;
+  margin: 2rem auto;
 }
 
 .space-section p {
-    color: var(--color-text-img);
-    font-size: 1.4rem;
-    margin: 1rem 0;
+  color: var(--color-text-img);
+  font-size: 1.4rem;
+  margin: 1rem 0;
 }
 
 .space-img-box {
-    width: 120rem;
-    height: auto;
-    margin: 0 auto;
+  width: 120rem;
+  height: auto;
+  margin: 0 auto;
 }
 
 .space-img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/*----------------------- Article Section -------------------------*/
-/*------- Main Article ---------*/
-.float-blog, .flexbox-blog {
-    width: 56%;
-    margin: 0 auto;
-    margin-bottom: 6rem;
+/* ----------------------- Article Section ------------------------- */
+
+/* ------- Main Article --------- */
+.float-blog,
+.flexbox-blog {
+  width: 56%;
+  margin: 0 auto;
+  margin-bottom: 6rem;
 }
 
-.float-blog:after, .icons-box:after, .aside-post:after {
-    content: "";
-    display: block;
-    clear: both;
+.float-blog::after,
+.icons-box::after,
+.aside-post::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .article-box {
-    display: block;
-    float: left;
-    width: 80%;
+  display: block;
+  float: left;
+  width: 80%;
 }
 
 .article-top {
-    width: 100%;
-    display: block;
-    margin: 1.5rem 0;
-    margin-bottom: 3rem;
+  width: 100%;
+  display: block;
+  margin: 1.5rem 0;
+  margin-bottom: 3rem;
 }
 
 .article-top p {
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin: 1rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 1rem 0;
 }
 
 .article-top a {
-    text-decoration: underline;
-    color: black;
-    transition: all 0.4s;
+  text-decoration: underline;
+  color: black;
+  transition: all 0.4s;
 }
 
 .article-top a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .icons-box {
-    display: block;
-    width: 100%;
-    margin: 1.5rem 0;
+  display: block;
+  width: 100%;
+  margin: 1.5rem 0;
 }
 
 .article-icons-left {
-    display: block;
-    width: 30rem;
-    float: left;
+  display: block;
+  width: 30rem;
+  float: left;
 }
 
 .article-icons-right {
-    display: block;
-    width: 30rem;
-    float: right;
-    margin-top: -2rem;
+  display: block;
+  width: 30rem;
+  float: right;
+  margin-top: -2rem;
 }
 
-.circle-icons, .normal-icons {
-    display: inline-block;
+.circle-icons,
+.normal-icons {
+  display: inline-block;
 }
 
-.circle i, .normal-icons i {
-    display: inline-block;
+.circle i,
+.normal-icons i {
+  display: inline-block;
 }
 
 .circle i {
-    margin-left: 2rem;
-    margin-right: 1.8rem;
+  margin-left: 2rem;
+  margin-right: 1.8rem;
 }
 
 .fa-comment-alt {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .circle i {
-    font-size: 1.8rem;
-    color: var(--color-text);
+  font-size: 1.8rem;
+  color: var(--color-text);
 }
 
 .circle {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
-.circle:before  {
-    content: "";
-    width: 3.5rem;
-    height: 3.5rem;
-    background-color: lightgray;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    border-radius: 50%;
+.circle::before {
+  content: "";
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: lightgray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 50%;
 }
 
 .normal-icons i {
-    font-size: 2.5rem;
-    color: grey;
+  font-size: 2.5rem;
+  color: grey;
 }
 
 .article-icons-left span {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
-.flexbox-blog p, .article-continue p {
-    font-size: 1.6rem;
-    color: var(--color-text);
-    margin: 0 auto;
-    width: 56%;
+.flexbox-blog p,
+.article-continue p {
+  font-size: 1.6rem;
+  color: var(--color-text);
+  margin: 0 auto;
+  width: 56%;
 }
 
-.main-article p, .flex-article p {
+.main-article p,
+.flex-article p {
   width: 100%;
   font-size: 1.6rem;
   color: var(--color-text);
@@ -261,86 +272,88 @@ body {
   margin-left: -6rem;
 }
 
-/*-------- Aside ---------*/
+/* -------- Aside --------- */
 .aside-box {
-    display: block;
-    float: right;
-    width: 30rem;
-    font-size: 1.6rem;
-    position: absolute;
-    top: 20rem;
-    right: -18rem;
+  display: block;
+  float: right;
+  width: 30rem;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 20rem;
+  right: -18rem;
 }
 
 .aside-box h3 {
-    font-weight: 600;
-    position: relative;
-    margin-bottom: 2.5rem;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 2.5rem;
 }
 
-.aside-box h3:before {
-    content: "";
-    height: 0.1rem;
-    background-color: lightgray;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -1rem;
+.aside-box h3::before {
+  content: "";
+  height: 0.1rem;
+  background-color: lightgray;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
 }
 
 .aside-post img {
-    float: left;
-    margin-right: 1rem;
-    margin-bottom: 1.5rem;
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .aside-post a {
-    text-decoration: none;
-    color: var(--color-text);
+  text-decoration: none;
+  color: var(--color-text);
 }
 
-/*----------------------- Flexbox Article ------------------------*/
+/* ----------------------- Flexbox Article ------------------------ */
 .flexbox-blog {
-    margin-top: 4rem;
-    position: relative;
+  margin-top: 4rem;
+  position: relative;
 }
 
 .flex-article {
-    width: 100%;
+  width: 100%;
 }
 
 .article-span h3 {
-    margin-top: 6rem;
-    margin-bottom: 6rem !important;
-    text-align: center;
-    position: relative;
-    font-size: 1.6rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem !important;
+  text-align: center;
+  position: relative;
+  font-size: 1.6rem;
 }
 
-.article-span h3:before, .article-span h3:after, .inflation-artciles:before {
-    content: "";
-    width: 10rem;
-    height: 0.1rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: lightgray;
+.article-span h3::before,
+.article-span h3::after,
+.inflation-artciles::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: lightgray;
 }
 
-.article-span h3:before {
-    top: -3rem;
+.article-span h3::before {
+  top: -3rem;
 }
 
-.article-span h3:after {
-    bottom: -3rem;
+.article-span h3::after {
+  bottom: -3rem;
 }
 
 .flexbox-blog h3 {
-    font-size: 2rem;
-    margin-bottom: 3rem;
+  font-size: 2rem;
+  margin-bottom: 3rem;
 }
 
-/*----------------------- Inflation Article ------------------------*/
+/* ----------------------- Inflation Article ------------------------ */
 
 .inflation-title {
   flex-direction: column;
@@ -385,121 +398,121 @@ body {
   padding: 1rem;
 }
 
-.inflation-artciles:before {
-    bottom: -2rem;
-    background-color: black;
-    left: 6rem;
+.inflation-artciles::before {
+  bottom: -2rem;
+  background-color: black;
+  left: 6rem;
 }
 
 .bottom-p {
-    flex-direction: column;
-    align-self: flex-start;
-    width: 50.5%;
-    margin: 0 auto;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 50.5%;
+  margin: 0 auto;
 }
 
 .bottom-p p {
-    width: 50rem !important;
-    font-size: 1.4rem;
+  width: 50rem !important;
+  font-size: 1.4rem;
 }
 
 .article-continue {
-    flex-direction: column;
-    width: 80%;
-    align-content: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 4rem 0;
+  flex-direction: column;
+  width: 80%;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 4rem 0;
 }
 
 .video {
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    width: 56%;
-    height: 50rem;
-    margin: 3rem auto;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 56%;
+  height: 50rem;
+  margin: 3rem auto;
 }
 
 .video iframe {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .video p {
-    color: var(--color-add-span);
-    margin: 1rem 0;
-    font-size: 1.4rem;
-    width: 100% !important;
+  color: var(--color-add-span);
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  width: 100% !important;
 }
 
 .article-continue h3 {
-    font-size: 2rem;
-    margin: 1rem 0;
+  font-size: 2rem;
+  margin: 1rem 0;
 }
 
 .article-continue-img {
-    margin: 3rem auto;
-    width: 80rem;
-    height: auto;
+  margin: 3rem auto;
+  width: 80rem;
+  height: auto;
 }
 
 .article-continue-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .article-continue-img p {
-    font-size: 1.4rem;
-    color: var(--color-text-img);
-    margin: 1rem 0;
-    width: 100%;
+  font-size: 1.4rem;
+  color: var(--color-text-img);
+  margin: 1rem 0;
+  width: 100%;
 }
 
 .small-text p {
-    font-size: 1.2rem;
-    color: var(--color-text-img);
-    margin: 2rem auto;
-    width: 56%;
+  font-size: 1.2rem;
+  color: var(--color-text-img);
+  margin: 2rem auto;
+  width: 56%;
 }
 
-.small-text a:not(:last-child) {
-    color: var(--color-text-img);
-    position: relative;
-    margin-right: 2rem;
-    transition: all 0.4s;
+.small-text a {
+  color: var(--color-text-img);
+  position: relative;
+  margin-right: 2rem;
+  transition: all 0.4s;
 }
 
-.small-text a:not(:last-child):before {
-    content: "";
-    width: 0.1rem;
-    height: 2rem;
-    position: absolute;
-    top: 0;
-    right: -1.5rem;
-    background-color: var(--color-text-img);
+.small-text a:not(:last-child)::before {
+  content: "";
+  width: 0.1rem;
+  height: 2rem;
+  position: absolute;
+  top: 0;
+  right: -1.5rem;
+  background-color: var(--color-text-img);
 }
 
 .small-text a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .article-continue-bottom-box {
-    justify-content: space-between;
-    width: 56%;
-    margin: 0 auto;
+  justify-content: space-between;
+  width: 56%;
+  margin: 0 auto;
 }
 
 .continue-left button {
-   width: 20rem;
-   margin-left: -0.2rem;
+  width: 20rem;
+  margin-left: -0.2rem;
 }
 
 .margin-circle-top {
-    margin-top: 1.5rem;
-    margin-right: 1rem;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
 }
 
 .article-title {
@@ -508,332 +521,344 @@ body {
 }
 
 .article-title-2 {
-    width: 56%;
-    margin: 2rem auto !important;
+  width: 56%;
+  margin: 2rem auto !important;
 }
 
 .article-link {
-    text-decoration: underline;
-    color: var(--color-navbar-button);
-    transition: all 0.4s; 
-    font-weight: 600;
+  text-decoration: underline;
+  color: var(--color-navbar-button);
+  transition: all 0.4s;
+  font-weight: 600;
 }
 
 .article-link:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-/*-------------------------- Recomendations Section -----------------------------*/
+/* -------------------------- Recomendations Section ----------------------------- */
 .recomendations-box {
-    display: grid;
-    grid-template-columns: minmax(max-content, 1fr) 31.5rem;
-    grid-template-rows: min-content;
-    width: 50%;
-    margin: 0 auto;
-    justify-items: center;
-    justify-content: center !important;
-    margin-top: 6rem;
+  display: grid;
+  grid-template-columns: minmax(max-content, 1fr) 31.5rem;
+  grid-template-rows: min-content;
+  width: 50%;
+  margin: 0 auto;
+  justify-items: center;
+  justify-content: center !important;
+  margin-top: 6rem;
 }
 
 .recomendations {
-    display: grid;
-    grid-template-columns: minmax(max-content, 1fr);
-    grid-template-rows: repeat(2, min-content);
+  display: grid;
+  grid-template-columns: minmax(max-content, 1fr);
+  grid-template-rows: repeat(2, min-content);
 }
 
 .recomendations-top {
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, min-content);
-    grid-gap: 2rem;
-    width: 80%;
-    position: relative;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  grid-gap: 2rem;
+  width: 80%;
+  position: relative;
 }
 
 .items h4 {
-    font-size: 1.8rem;
-    font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .items p {
-    font-size: 1.4rem;
-    color: var(--color-add-span);
+  font-size: 1.4rem;
+  color: var(--color-add-span);
 }
 
 .recomendations-bottom {
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: min-content;
-    grid-gap: 2rem;
-    width: 80%;
-    position: relative;
-    margin-top: 8rem;
-    margin-bottom: 6rem;
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: min-content;
+  grid-gap: 2rem;
+  width: 80%;
+  position: relative;
+  margin-top: 8rem;
+  margin-bottom: 6rem;
 }
 
 .most-popular {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    position: relative;
-    margin-left: 10rem;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  position: relative;
+  margin-left: 10rem;
 }
 
-.recomendations-top:before {
-    content: "More in Space and Astronomy";
-    width: 125%;
-    height: 0.1rem;
-    background-color: black;
-    position: absolute;
-    top: -4rem;
-    left: 0;
-    font-size: 1.6rem;
-    font-weight: 700;
+.recomendations-top::before {
+  content: "More in Space and Astronomy";
+  width: 125%;
+  height: 0.1rem;
+  background-color: black;
+  position: absolute;
+  top: -4rem;
+  left: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
-.recomendations-bottom:before {
-    content: "Editors’ Picks";
-    width: 125%;
-    height: 0.1rem;
-    background-color: black;
-    position: absolute;
-    top: -4rem;
-    left: 0;
-    font-size: 1.6rem;
-    font-weight: 700;   
+.recomendations-bottom::before {
+  content: "Editors’ Picks";
+  width: 125%;
+  height: 0.1rem;
+  background-color: black;
+  position: absolute;
+  top: -4rem;
+  left: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
-.most-popular:before {
-    content: "Most Popular";
-    width: 130%;
-    height: 0.1rem;
-    position: absolute;
-    top: -4rem;
-    left: -10rem;
-    background-color: black;
-    font-size: 1.6rem;
-    font-weight: 700;
+.most-popular::before {
+  content: "Most Popular";
+  width: 130%;
+  height: 0.1rem;
+  position: absolute;
+  top: -4rem;
+  left: -10rem;
+  background-color: black;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .grid-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    width: 27rem;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 27rem;
 }
 
 .grid-2 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    width: 27rem;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  width: 27rem;
 }
 
 .grid-3 {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    width: 27rem;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  width: 27rem;
 }
 
 .grid-4 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    width: 27rem;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  width: 27rem;
 }
 
 .grid-5 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    width: 27rem;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  width: 27rem;
 }
 
 .grid-6 {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-    width: 27rem;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  width: 27rem;
 }
 
 .grid-7 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    width: 27rem;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  width: 27rem;
 }
 
 .grid-8 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    width: 27rem;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  width: 27rem;
 }
 
 .grid-9 {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-    width: 27rem;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  width: 27rem;
 }
 
 .feature-links {
-    list-style: none;
-    padding: 0;
-    margin-left: -10rem;
-    margin-top: -2rem;
-    width: 27rem;
+  list-style: none;
+  padding: 0;
+  margin-left: -10rem;
+  margin-top: -2rem;
+  width: 27rem;
 }
 
 .feature-links li {
-    position: relative;
-    margin: 3rem 0;
+  position: relative;
+  margin: 3rem 0;
 }
 
-.feature-links li:before {
-    content: "";
-    width: 100%;
-    height: 0.1rem;
-    background-color: lightgray;
-    position: absolute;
-    top: -1rem;
-    left: 0;
+.feature-links li::before {
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  background-color: lightgray;
+  position: absolute;
+  top: -1rem;
+  left: 0;
 }
 
 .feature-links a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.6rem;
-    font-weight: 600;
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
-/*-------------------------- Footer Section -----------------------------*/
+/* -------------------------- Footer Section ----------------------------- */
 .footer-box {
-    background-color: white;
-    padding: 3rem 0;
+  background-color: white;
+  padding: 3rem 0;
 }
 
 .footer {
-    width: 70%;
-    margin: 0 auto;
-    flex-direction: column;
-    position: relative;
-    margin-top: 3rem;
+  width: 70%;
+  margin: 0 auto;
+  flex-direction: column;
+  position: relative;
+  margin-top: 3rem;
 }
 
-.footer:before, .footer:after, .footer-copy:before, .footer-link-bottom:before  {
-    content: "";
-    width: 100%;
-    height: 0.1rem;
-    background-color: var(--color-add-span);
-    position: absolute;
-   
-    left: 0;
+.footer::before,
+.footer::after,
+.footer-copy::before,
+.footer-link-bottom::before {
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--color-add-span);
+  position: absolute;
+  left: 0;
 }
 
-.footer:before, .footer-copy:before, .footer-link-bottom:before  {
-    top: -1rem;
+.footer::before,
+.footer-copy::before,
+.footer-link-bottom::before {
+  top: -1rem;
 }
 
-.footer:after {
-    top: -1.5rem;
+.footer::after {
+  top: -1.5rem;
 }
 
 .footer-logo {
-    width: 20rem;
-    height: auto;
-    margin-bottom: 2rem;
+  width: 20rem;
+  height: auto;
+  margin-bottom: 2rem;
 }
 
 .footer-title {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer-logo,
+.footer-title p {
+  cursor: pointer !important;
 }
 
 .footer-main {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .footer-content {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer-copy {
-    justify-content: space-between;
-    margin-top: 3rem;
-    position: relative;
+  justify-content: space-between;
+  margin-top: 3rem;
+  position: relative;
 }
 
 .footer-column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
-.icons-link, .footer-link-top, .footer-link-bottom {
-    flex-direction: column;
+.icons-link,
+.footer-link-top,
+.footer-link-bottom {
+  flex-direction: column;
 }
 
 .vertical-line {
-    position: relative;
+  position: relative;
 }
 
-.vertical-line:before {
-    content: "";
-    width: 0.1rem;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: -1rem;
-    background-color: var(--color-add-span);
+.vertical-line::before {
+  content: "";
+  width: 0.1rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  background-color: var(--color-add-span);
 }
 
 .footer-link-bottom {
-    position: relative;
-    margin: 2rem 0;
+  position: relative;
+  margin: 2rem 0;
 }
 
 .footer-column h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer-column a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-bottom: 0.6rem;
-    transition: all 0.4s;
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+  transition: all 0.4s;
 }
 
-.footer-column a:hover, .footer-copy a:hover {
-    text-decoration: underline;
+.footer-column a:hover,
+.footer-copy a:hover {
+  text-decoration: underline;
 }
 
 .icons-link a {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .icons-link a i {
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer-link-top {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-.footer-link-top a, .footer-link-bottom a {
-    font-size: 1.1rem;
+.footer-link-top a,
+.footer-link-bottom a {
+  font-size: 1.1rem;
 }
 
 .footer-copy {
-    padding: 0 9rem;
+  padding: 0 9rem;
 }
 
 .footer-copy a {
-    font-size: 1.1rem;
-    color: var(--color-text-img);
-    text-decoration: none;
-    transition: all 0.4s;
+  font-size: 1.1rem;
+  color: var(--color-text-img);
+  text-decoration: none;
+  transition: all 0.4s;
 }
-
