@@ -701,3 +701,139 @@ body {
     font-size: 1.6rem;
     font-weight: 600;
 }
+
+/*-------------------------- Footer Section -----------------------------*/
+.footer-box {
+    background-color: white;
+    padding: 3rem 0;
+}
+
+.footer {
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: column;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.footer:before, .footer:after, .footer-copy:before, .footer-link-bottom:before  {
+    content: "";
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--color-add-span);
+    position: absolute;
+   
+    left: 0;
+}
+
+.footer:before, .footer-copy:before, .footer-link-bottom:before  {
+    top: -1rem;
+}
+
+.footer:after {
+    top: -1.5rem;
+}
+
+.footer-logo {
+    width: 20rem;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.footer-title {
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer-main {
+    flex-direction: column;
+}
+
+.footer-content {
+    justify-content: space-between;
+}
+
+.footer-copy {
+    justify-content: space-between;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.footer-column {
+    flex-direction: column;
+}
+
+.icons-link, .footer-link-top, .footer-link-bottom {
+    flex-direction: column;
+}
+
+.vertical-line {
+    position: relative;
+}
+
+.vertical-line:before {
+    content: "";
+    width: 0.1rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    background-color: var(--color-add-span);
+}
+
+.footer-link-bottom {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.footer-column h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 0.6rem;
+    transition: all 0.4s;
+}
+
+.footer-column a:hover, .footer-copy a:hover {
+    text-decoration: underline;
+}
+
+.icons-link a {
+    font-weight: 700;
+}
+
+.icons-link a i {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-link-top {
+    margin-top: 1.5rem;
+}
+
+.footer-link-top a, .footer-link-bottom a {
+    font-size: 1.1rem;
+}
+
+.footer-copy {
+    padding: 0 9rem;
+}
+
+.footer-copy a {
+    font-size: 1.1rem;
+    color: var(--color-text-img);
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
