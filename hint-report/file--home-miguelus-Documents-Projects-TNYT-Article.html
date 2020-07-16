@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     
-        <link rel="icon" href="data:undefined;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAA+UlEQVR4Ae3WEZDFMBAG4NJx/ODiFKc41SlOdYpTnOoUPYtTneJUl70fFjKZlSZ70wfZmU9eMy9/k+yk26pPq1Wrfr+/DOxvBghwg39jcg8XEGTNJT2g8JtRJ0PgsQ6I3WA1AuzyxCLbjY1aAegB12xDBaMRoj4MccEPeK0AHmhQgVMjxAE0ycyGSAohgvTHFjxY4Zlrn/GS0qQohYhdDwfWt5VWiDx62HbFEGWTquljyQ2Gx1XV7RD2XnrLCk7oDMWDKR/Ss1mBBL75jWm3qByE/kl6eueTsgvMyEVV3wkgr0oenLxCVP864lCRgxVBggPczFyrVq36A/ZKkGuMyCHgAAAAAElFTkSuQmCC">
+        <link rel="icon" href="data:undefined/base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAA+UlEQVR4Ae3WEZDFMBAG4NJx/ODiFKc41SlOdYpTnOoUPYtTneJUl70fFjKZlSZ70wfZmU9eMy9/k+yk26pPq1Wrfr+/DOxvBghwg39jcg8XEGTNJT2g8JtRJ0PgsQ6I3WA1AuzyxCLbjY1aAegB12xDBaMRoj4MccEPeK0AHmhQgVMjxAE0ycyGSAohgvTHFjxY4Zlrn/GS0qQohYhdDwfWt5VWiDx62HbFEGWTquljyQ2Gx1XV7RD2XnrLCk7oDMWDKR/Ss1mBBL75jWm3qByE/kl6eueTsgvMyEVV3wkgr0oenLxCVP864lCRgxVBggPczFyrVq36A/ZKkGuMyCHgAAAAAElFTkSuQmCC">
     
 
 
@@ -508,12 +508,9 @@ a.anchor-top::before {
     left: 0;
     padding: 0 1.25rem;
 }
-
-        </style>
-    
-        <style>
-            /* Content from file: styles/scan/scan-results.css */
-            /*
+        </style>   
+        <style>/* Content from file: styles/scan/scan-results.css */
+/*
 * SCAN RESULTS
 * =============================================
 * @Dependencies: base.css, structure.css, type.css
@@ -1364,7 +1361,7 @@ button {
         <h2 id="hints">Hints</h2>
         <div class="layout layout--basic--offset--alt">
             <div class="module module--secondary module--categories">
-                <button aria-control="categories-list" class="show-categories" id="show-categories">Jump to category</button>
+                <button class="show-categories" id="show-categories" type="button">Jump to category</button>
                 <div class="rule-categories" id="categories-list">
                                             <a class="rule-tile--wrapper" id="summary-accessibility" href="#category-accessibility">
     <div class="rule-tile">
@@ -1488,14 +1485,14 @@ button {
     <div class="rule-result--category">
         <h3 id="category-accessibility">Accessibility <a href="#category-accessibility" class="hint-link" title="Accessibility"></a></h3>
         
-            <button title="expand" class="button-expand-all expanded">close all</button>
+            <button title="expand" class="button-expand-all expanded" type="button">close all</button>
 
         
     </div>
     
         
-            <details open class="rule-result--details" id="axe/aria" aria-expanded="true" role="group">
-    <summary class="rule-title" title="show axe/aria&#39;s result details" role="button">axe/aria: 1 hints</summary>
+            <details open class="rule-result--details" id="axe/aria" aria-expanded="true">
+    <summary class="rule-title" title="show axe/aria&#39;s result details">axe/aria: 1 hints</summary>
     <div class="rule-content">
         
         <div class="rule-doc-buttons">
@@ -1566,7 +1563,7 @@ button {
     <div class="rule-result--category">
         <h3 id="category-pitfalls">Pitfalls <a href="#category-pitfalls" class="hint-link" title="Pitfalls"></a></h3>
         
-            <button title="expand" class="button-expand-all expanded">close all</button>
+            <button title="expand" class="button-expand-all expanded"  type="button">close all</button>
 
         
     </div>
@@ -1619,7 +1616,7 @@ button {
     <div class="rule-result--category">
         <h3 id="category-compatibility">Compatibility <a href="#category-compatibility" class="hint-link" title="Compatibility"></a></h3>
         
-            <button title="expand" class="button-expand-all expanded">close all</button>
+            <button title="expand" class="button-expand-all expanded"  type="button">close all</button>
 
         
     </div>
@@ -2807,7 +2804,7 @@ button {
     <div class="rule-result--category">
         <h3 id="category-security">Security <a href="#category-security" class="hint-link" title="Security"></a></h3>
         
-            <button title="expand" class="button-expand-all expanded">close all</button>
+            <button title="expand" class="button-expand-all expanded"  type="button">close all</button>
 
         
     </div>

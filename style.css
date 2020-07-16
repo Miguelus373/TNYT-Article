@@ -74,7 +74,7 @@ body {
   background-color: var(--color-navbar-button);
   color: white;
   font-weight: 600;
-  font-size: 1.4;
+  font-size: 1.4rem;
   text-transform: uppercase;
   border: none;
   border-radius: 0.3rem;
@@ -175,10 +175,6 @@ body {
   transition: all 0.4s;
 }
 
-.article-top a:hover {
-  text-decoration: none;
-}
-
 .icons-box {
   display: block;
   width: 100%;
@@ -211,15 +207,12 @@ body {
 .circle i {
   margin-left: 2rem;
   margin-right: 1.8rem;
+  font-size: 1.8rem;
+  color: var(--color-text);
 }
 
 .fa-comment-alt {
   margin-left: 1rem;
-}
-
-.circle i {
-  font-size: 1.8rem;
-  color: var(--color-text);
 }
 
 .circle {
@@ -270,6 +263,7 @@ body {
 
 .flex-article {
   margin-left: -6rem;
+  width: 100%;
 }
 
 /* -------- Aside --------- */
@@ -314,10 +308,6 @@ body {
 .flexbox-blog {
   margin-top: 4rem;
   position: relative;
-}
-
-.flex-article {
-  width: 100%;
 }
 
 .article-span h3 {
@@ -495,10 +485,6 @@ body {
   background-color: var(--color-text-img);
 }
 
-.small-text a:hover {
-  text-decoration: none;
-}
-
 .article-continue-bottom-box {
   justify-content: space-between;
   width: 56%;
@@ -530,10 +516,6 @@ body {
   color: var(--color-navbar-button);
   transition: all 0.4s;
   font-weight: 600;
-}
-
-.article-link:hover {
-  text-decoration: none;
 }
 
 /* -------------------------- Recomendations Section ----------------------------- */
@@ -784,6 +766,7 @@ body {
   justify-content: space-between;
   margin-top: 3rem;
   position: relative;
+  padding: 0 9rem;
 }
 
 .footer-column {
@@ -829,11 +812,6 @@ body {
   transition: all 0.4s;
 }
 
-.footer-column a:hover,
-.footer-copy a:hover {
-  text-decoration: underline;
-}
-
 .icons-link a {
   font-weight: 700;
 }
@@ -852,13 +830,28 @@ body {
   font-size: 1.1rem;
 }
 
-.footer-copy {
-  padding: 0 9rem;
-}
-
 .footer-copy a {
   font-size: 1.1rem;
   color: var(--color-text-img);
   text-decoration: none;
   transition: all 0.4s;
+}
+
+/* -------------------------- Hover ----------------------------- */
+
+.article-top a:hover {
+  text-decoration: none;
+}
+
+.small-text a:hover {
+  text-decoration: none;
+}
+
+.article-link:hover {
+  text-decoration: none;
+}
+
+.footer-column a:hover,
+.footer-copy a:hover {
+  text-decoration: underline;
 }
