@@ -603,7 +603,7 @@ body {
 
 .most-popular::before {
   content: "Most Popular";
-  width: 130%;
+  width: 160%;
   height: 0.1rem;
   position: absolute;
   top: -4rem;
